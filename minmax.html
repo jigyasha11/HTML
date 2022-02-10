@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        let a=2,b=9,c=7;
+        function maxi(a,b,c)
+        {
+            if (a>=b && a>=c)
+                return (a);
+            else if (b >= c)
+                return (b);
+            else
+                return (c);
+        }
+            document.write("Maximum of " + a +", "+ b +" and "+ c + ": " + maxi(2,9,7));
+
+        function mini(a,b,c)
+        {
+            if (a<=b && a<=c)
+                return (a);
+            else if (b <= c)
+                return (b);
+            else
+                return (c);
+        }
+            document.write("<br>Minimum of " + a +", "+ b +" and "+ c + ": " + mini(2,9,7));
+
+    </script>
+</body>
+</html>
