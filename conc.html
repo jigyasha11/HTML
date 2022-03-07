@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Concatenation</title>
+</head>
+<body>
+	<form>
+		<label>String 1:</label>
+		<input type="text" id="stg1" size="25">
+		<br><br>
+		<label>String 2:</label>
+		<input type="text" id="stg2" size="25">
+		<br><br>
+		<button onclick="string()">Enter</button>
+	</form>
+	
+	<script>
+		function string()
+		{
+			var string1= document.getElementById('stg1').value;
+			var string2= document.getElementById('stg2').value;
+			document.write(string1 + string2);
+		}
+	</script>
+</body>
+</html>
