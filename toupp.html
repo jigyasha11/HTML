@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Upper</title>
+</head>
+<body>
+	<form>
+		<input type="text" id="textInput" size="50" placeholder="Type something..." onkeyup="convertToUpper()">
+	</form>
+	<script type="text/javascript">
+		function convertToUpper()
+		{
+			var txt= document.getElementById('textInput').value;
+			txt= txt.toUpperCase();
+			document.getElementById('textInput').value= txt;
+		}
+		
+		/*function conertToUpperNew()
+		{
+			document.getElementById('textInput').value= document.getElementById('textInput').value.toUpperCase();
+		}*/
+	</script>
+</body>
+</html>
