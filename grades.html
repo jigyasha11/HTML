@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Grades</title>
+</head>
+<body>
+	<form>
+		<label>Enter the marks:</label>
+		<input type="text" id="textInput" size="25">
+		
+		<button onclick="grades()">Enter</button>
+	</form>
+	
+	<script>
+		function grades()
+		{
+		var marks= document.getElementById('textInput').value;
+		marks= Number(marks);
+		if(marks>=90)
+			document.write("Grade: A");
+		else if (marks>=80)
+			document.write("Grade: B");
+		else if(marks>=70)
+			document.write("Grade: C");
+		else
+			document.write("Grade: D");
+		}
+		
+	</script>
+</body>
+</html>
