@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vadidation form</title>
+	<style type="text/css">
+		.error
+		{
+		 color: red;
+		 background-color: rgb(245, 215, 215);
+		 border-top: 0.5px red solid;
+		 border-bottom: 0.5px red solid;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" name="signin" onsubmit="return validatef()">
+	<table>
+		<tr>
+			<td><label>Username</label></td>
+			<td><input type="text" name="username" id="username"></td>
+		</tr>
+		<tr>
+			<td><label>Password: </label></td>
+			<td><input type="password" name="password" id="password"></td>
+		</tr>
+		<tr>
+			<td></td><td><input type="submit" value="Sign In" name=""></td>
+		</tr>
+	</table>
+	</form>
+		<p id="errormsg" class="error"></p>
+	<script type="text/javascript">
+		function validatef()
+		{
+			var uname= document.getElementById("username").value;
+			var passwd= document.getElementById("password").value;
+			
+			if(uname.length==0)
+			{
+				document.getElementById("errormsg").innerHTML="Username can not be empty";
+				return false;
+			}
+			
+			if(passwd.length==0)
+			{
+				document.getElementById("errormsg").innerHTML="Password can not be empty";
+				return false;
+			}
+			
+			if(uname.length==0 && passwd.length==0)
+			{
+				document.getElementById("errormsg").innerHTML="Username and Password can not be empty";
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
+		
